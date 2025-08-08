@@ -25,15 +25,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning
-    >
-    <div className=" bg-[url('/assets/herobg.png')] opacity-80 fixed -z-10 inset-0" />
-   <main className="min-h-screen"> {children} </main>
-   <footer className="bg-green-300 py-12 bg-opacity-10">
-  <div className="">
-    <p> Crafted with a calm mind 🌿✨ </p>
-  </div>
-   </footer>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
+      >
+        <div
+          className="bg-[url('/assets/herobg.png')] opacity-50 fixed -z-10 inset-0"
+        />
+        <main className="min-h-screen">{children}</main>
+        <footer className="py-12 ">
+          <div className="mx-auto px-4 text-center font-sans text-gray-900">
+            <p>Crafted with a calm mind 🌿✨</p>
+          </div>
+        </footer>
       </body>
     </html>
   );

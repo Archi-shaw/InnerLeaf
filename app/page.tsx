@@ -1,10 +1,10 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
-
+import Header from '@/components/header'
 const page = () => {
   return (
     <div>
-      <Button variant="journal"> Hiiii </Button>
+      <Header />
     </div>
   )
 }
